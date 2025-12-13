@@ -4,4 +4,7 @@
   enterShell = ''
     clear
   '';
+  packages = [
+    pkgs.hugo
+  ];
 }
