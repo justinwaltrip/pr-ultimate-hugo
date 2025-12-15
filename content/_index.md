@@ -2,6 +2,7 @@
 title = 'Pine-Richland Ultimate Frisbee'
 date = 2025-12-13
 draft = false
+featured_image = '/images/hero-placeholder.svg'
 +++
 
 ## Welcome to Pine-Richland Ultimate

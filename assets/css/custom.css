@@ -1,0 +1,115 @@
+/* Green and White Theme for Pine-Richland Ultimate */
+
+:root {
+  --primary-green: #2d5016;
+  --light-green: #4a7c2c;
+  --accent-green: #5a9633;
+  --hover-green: #6fb041;
+  --bg-white: #ffffff;
+  --off-white: #f8f9fa;
+}
+
+/* Body and main content */
+body {
+  background-color: var(--off-white);
+  color: #333;
+}
+
+/* Header styling */
+.site-header,
+header {
+  background-color: var(--primary-green) !important;
+  color: var(--bg-white) !important;
+}
+
+.site-title a,
+.site-header a {
+  color: var(--bg-white) !important;
+}
+
+.site-header a:hover {
+  color: var(--hover-green) !important;
+}
+
+/* Navigation links */
+nav a {
+  color: var(--bg-white) !important;
+}
+
+nav a:hover {
+  color: var(--hover-green) !important;
+  border-bottom: 2px solid var(--hover-green);
+}
+
+/* Links */
+a {
+  color: var(--light-green);
+}
+
+a:hover {
+  color: var(--accent-green);
+}
+
+/* Headings */
+h1, h2, h3, h4, h5, h6 {
+  color: var(--primary-green);
+}
+
+/* Buttons and CTAs */
+.btn,
+button,
+input[type="submit"] {
+  background-color: var(--accent-green);
+  color: var(--bg-white);
+  border: none;
+  padding: 10px 20px;
+  border-radius: 4px;
+}
+
+.btn:hover,
+button:hover,
+input[type="submit"]:hover {
+  background-color: var(--hover-green);
+  color: var(--bg-white);
+}
+
+/* Footer */
+footer,
+.site-footer {
+  background-color: var(--primary-green);
+  color: var(--bg-white);
+}
+
+footer a,
+.site-footer a {
+  color: var(--bg-white);
+}
+
+footer a:hover,
+.site-footer a:hover {
+  color: var(--hover-green);
+}
+
+/* Cards and sections */
+.post,
+article {
+  background-color: var(--bg-white);
+  border-left: 4px solid var(--accent-green);
+}
+
+/* Featured image placeholder */
+.featured-image {
+  background-color: var(--light-green);
+  min-height: 300px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--bg-white);
+  font-size: 1.5rem;
+}
+
+/* Highlight current page in nav */
+.active,
+.current {
+  border-bottom: 3px solid var(--bg-white);
+}

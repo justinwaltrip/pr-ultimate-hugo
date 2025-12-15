@@ -2,3 +2,9 @@ baseURL = 'https://example.org/'
 languageCode = 'en-us'
 title = 'Pine-Richland Ultimate'
 theme = 'ananke'
+
+[params]
+  custom_css = ["css/custom.css"]
+  featured_image = "/images/hero-placeholder.svg"
+  background_color_class = "bg-white"
+  text_color = "dark-gray"
