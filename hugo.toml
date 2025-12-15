@@ -5,6 +5,10 @@ theme = 'ananke'
 
 [params]
   custom_css = ["css/custom.css"]
-  featured_image = "/images/hero-placeholder.svg"
+  featured_image = "/images/team_photo.png"
+  featured_image_class = "cover bg-center"
   background_color_class = "bg-white"
   text_color = "dark-gray"
+  body_classes = "avenir bg-near-white"
+  cover_dimming_class = "bg-black-20"
+  description = "Co-ed high school ultimate frisbee program in Pittsburgh"

@@ -2,7 +2,8 @@
 title = 'Pine-Richland Ultimate Frisbee'
 date = 2025-12-13
 draft = false
-featured_image = '/images/hero-placeholder.svg'
+featured_image = '/images/team_photo.png'
+featured_image_class = 'cover bg-center'
 +++
 
 ## Welcome to Pine-Richland Ultimate
@@ -22,11 +23,6 @@ The team reflects the broader Pine-Richland athletic mission, emphasizing academ
 Pine-Richland Ultimate stands out for combining co-ed participation and inclusive team culture with a proven track record in one of the country’s strongest high school ultimate regions.  Players benefit from dedicated coaching, competitive league play, and a supportive community that treats the team as an integral part of the district’s proud athletic tradition, making PR Ultimate a distinctive and tight-knit program within the school.
 
 ## Season Information
-
-<!-- - **Season**: [e.g., Spring 2026]
-- **Division**: [e.g., High School Varsity]
-- **Home Field**: [Location]
-- **Practice Schedule**: [Days and times] -->
 
 - **Seasons**: Fall, Winter (indoor), Spring
 - **Divisions**: Open (Gender) Division I

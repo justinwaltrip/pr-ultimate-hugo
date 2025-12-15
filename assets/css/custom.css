@@ -9,107 +9,329 @@
   --off-white: #f8f9fa;
 }
 
-/* Body and main content */
+/* Override body background */
 body {
-  background-color: var(--off-white);
-  color: #333;
+  background-color: var(--off-white) !important;
+  color: #333 !important;
 }
 
-/* Header styling */
+/* Hero section - improve image visibility */
+header[class*="cover"] {
+  background-position: center center !important;
+  background-size: cover !important;
+  min-height: 500px !important;
+  max-height: 600px !important;
+}
+
+/* Adjust padding for better hero layout */
+header .pv4,
+header .pv6-l {
+  padding-top: 4rem !important;
+  padding-bottom: 4rem !important;
+}
+
+/* Header and navigation - override Ananke's bg-black */
+header,
 .site-header,
-header {
+header > div,
+header div[class*="bg-black"],
+footer,
+.site-footer,
+footer[class*="bg-black"] {
   background-color: var(--primary-green) !important;
-  color: var(--bg-white) !important;
-}
-
-.site-title a,
-.site-header a {
-  color: var(--bg-white) !important;
-}
-
-.site-header a:hover {
-  color: var(--hover-green) !important;
 }
 
 /* Navigation links */
-nav a {
+nav a,
+header nav a,
+.site-navigation a {
+  color: var(--bg-white) !important;
+  transition: all 0.3s ease;
+}
+
+nav a:hover,
+header nav a:hover,
+.site-navigation a:hover {
+  color: var(--hover-green) !important;
+}
+
+/* Site title */
+header h1,
+header h1 a,
+.site-title,
+.site-title a {
   color: var(--bg-white) !important;
 }
 
-nav a:hover {
-  color: var(--hover-green) !important;
-  border-bottom: 2px solid var(--hover-green);
+/* Featured image dimming - make it very light for better visibility */
+header [class*="bg-black"] {
+  background-color: rgba(45, 80, 22, 0.15) !important;
 }
 
-/* Links */
-a {
-  color: var(--light-green);
+/* Ensure text remains readable with light overlay */
+header h1,
+header h2 {
+  text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.9),
+               1px 1px 4px rgba(0, 0, 0, 0.8) !important;
+  font-weight: 700 !important;
 }
 
-a:hover {
-  color: var(--accent-green);
+/* Main content links */
+main a,
+article a,
+.nested-links a {
+  color: var(--light-green) !important;
 }
 
-/* Headings */
-h1, h2, h3, h4, h5, h6 {
-  color: var(--primary-green);
+main a:hover,
+article a:hover,
+.nested-links a:hover {
+  color: var(--accent-green) !important;
+}
+
+/* Headings in content */
+main h1,
+main h2,
+main h3,
+main h4,
+main h5,
+main h6,
+article h1,
+article h2,
+article h3,
+article h4,
+article h5,
+article h6 {
+  color: var(--primary-green) !important;
+}
+
+/* Override near-black and mid-gray text colors */
+.near-black,
+.mid-gray {
+  color: #333 !important;
 }
 
 /* Buttons and CTAs */
 .btn,
 button,
-input[type="submit"] {
-  background-color: var(--accent-green);
-  color: var(--bg-white);
-  border: none;
-  padding: 10px 20px;
-  border-radius: 4px;
+input[type="submit"],
+a[class*="bg-light-gray"] {
+  background-color: var(--accent-green) !important;
+  color: var(--bg-white) !important;
+  border: 1px solid var(--accent-green) !important;
+  transition: all 0.3s ease;
 }
 
 .btn:hover,
 button:hover,
-input[type="submit"]:hover {
-  background-color: var(--hover-green);
-  color: var(--bg-white);
+input[type="submit"]:hover,
+a[class*="bg-light-gray"]:hover {
+  background-color: var(--hover-green) !important;
+  border-color: var(--hover-green) !important;
+  color: var(--bg-white) !important;
 }
 
-/* Footer */
-footer,
-.site-footer {
-  background-color: var(--primary-green);
-  color: var(--bg-white);
-}
-
+/* Footer links */
 footer a,
 .site-footer a {
-  color: var(--bg-white);
+  color: var(--bg-white) !important;
 }
 
 footer a:hover,
 .site-footer a:hover {
-  color: var(--hover-green);
+  color: var(--hover-green) !important;
 }
 
-/* Cards and sections */
-.post,
-article {
+/* Override bg-white for content sections */
+main [class*="bg-white"] {
   background-color: var(--bg-white);
   border-left: 4px solid var(--accent-green);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
-/* Featured image placeholder */
-.featured-image {
-  background-color: var(--light-green);
-  min-height: 300px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: var(--bg-white);
-  font-size: 1.5rem;
+/* Make the hero section title more readable */
+header h1.white-90,
+header h2.white-80 {
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
 }
 
-/* Highlight current page in nav */
-.active,
-.current {
-  border-bottom: 3px solid var(--bg-white);
+/* Style for content area */
+.nested-copy-line-height {
+  line-height: 1.8;
+}
+
+/* Main content container */
+main {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem 1rem;
+}
+
+/* Override narrow measure classes */
+.measure,
+.measure-wide,
+.measure-wide-l {
+  max-width: 100% !important;
+}
+
+/* Ensure content is left-aligned */
+main section,
+main .nested-copy-line-height,
+main article,
+main .center,
+main .tc {
+  text-align: left !important;
+}
+
+/* Section spacing and styling */
+main section {
+  margin-bottom: 3rem;
+}
+
+/* Improved heading styles */
+main h2 {
+  color: var(--primary-green) !important;
+  font-size: 2rem !important;
+  font-weight: 700 !important;
+  margin-top: 2.5rem !important;
+  margin-bottom: 1.5rem !important;
+  padding-bottom: 0.5rem !important;
+  border-bottom: 3px solid var(--accent-green) !important;
+}
+
+main h3 {
+  color: var(--light-green) !important;
+  font-size: 1.5rem !important;
+  font-weight: 600 !important;
+  margin-top: 2rem !important;
+  margin-bottom: 1rem !important;
+}
+
+main h4 {
+  color: var(--light-green) !important;
+  font-weight: 600 !important;
+  margin-top: 1.5rem !important;
+}
+
+/* Improve paragraph spacing */
+main p {
+  margin-bottom: 1.25rem !important;
+  line-height: 1.8 !important;
+}
+
+/* Style lists with green bullets and better spacing */
+main ul,
+article ul,
+.nested-copy-line-height ul {
+  margin: 1.5rem 0 !important;
+  padding-left: 2rem !important;
+  text-align: left !important;
+  list-style-type: disc !important;
+  list-style-position: outside !important;
+}
+
+main ul li,
+article ul li,
+.nested-copy-line-height ul li {
+  margin-bottom: 0.75rem !important;
+  padding-left: 0.5rem !important;
+  line-height: 1.6 !important;
+  text-align: left !important;
+  color: #333 !important;
+}
+
+main ul li::marker,
+article ul li::marker,
+.nested-copy-line-height ul li::marker {
+  color: var(--accent-green) !important;
+  font-size: 1.2em !important;
+  content: '●' !important;
+}
+
+/* Style for nested lists */
+main ul ul {
+  margin-top: 0.5rem !important;
+  margin-bottom: 0.5rem !important;
+}
+
+/* Improve strong/bold text */
+main strong {
+  color: var(--primary-green) !important;
+  font-weight: 700 !important;
+}
+
+/* Better link styling in content */
+main a {
+  color: var(--light-green) !important;
+  text-decoration: underline !important;
+  text-decoration-color: var(--accent-green) !important;
+  text-decoration-thickness: 2px !important;
+  text-underline-offset: 3px !important;
+  transition: all 0.2s ease !important;
+}
+
+main a:hover {
+  color: var(--accent-green) !important;
+  text-decoration-color: var(--hover-green) !important;
+}
+
+/* Card-like styling for content sections */
+main > div {
+  background: white;
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  margin-bottom: 2rem;
+}
+
+/* Blockquote styling */
+blockquote {
+  border-left: 4px solid var(--accent-green) !important;
+  background: var(--off-white) !important;
+  padding: 1rem 1.5rem !important;
+  margin: 1.5rem 0 !important;
+  font-style: italic !important;
+}
+
+/* Code styling */
+code {
+  background: var(--off-white) !important;
+  color: var(--primary-green) !important;
+  padding: 0.2rem 0.4rem !important;
+  border-radius: 3px !important;
+  font-size: 0.9em !important;
+}
+
+/* Improve contrast for light silver text */
+.light-silver {
+  color: #f0f0f0 !important;
+}
+
+/* Responsive spacing */
+@media (min-width: 768px) {
+  main {
+    padding: 3rem 4rem;
+  }
+  
+  main > div {
+    padding: 3rem 4rem;
+  }
+  
+  main h2 {
+    font-size: 2.5rem !important;
+  }
+}
+
+@media (min-width: 1024px) {
+  main {
+    padding: 4rem 6rem;
+  }
+  
+  main > div {
+    padding: 4rem 6rem;
+  }
+  
+  main h2 {
+    font-size: 2.5rem !important;
+  }
 }
